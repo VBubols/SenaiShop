@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://ava.sesisenai.org.br/theme/image.php/senai/theme/1749056005/favicon">
     <link href="./style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 
@@ -13,28 +14,40 @@
         <h1>SenaiShop</h1>
     </header>
 
-    <div class="buying">
-        <h2>Informações de pagamento:</h2>
-        <p style="color: red;">Não inserir Informações pessoais. Este é só um site para estudo.</p>
-        <br>
-        <label for="card_number">Número do cartão:</label>
-        <input type="text" id="card_number" name="card_number" class="input"></input>
-        <br>
-        <label for="validity">Validade:</label>
-        <input type="text" id="validity" name="validity" class="input"></input>
-        <br>
-        <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv" class="input"></input>
-        <br>
-            <div class="buy_button2">
-                <a href="./final_page.html" target="_self">COMPRAR</a>
-            </div>
-        <br>
+    <div class="container">
+        <form class="buying" action="./final_page.html">
+            <h2>Informações de pagamento:</h2>
+            <p style="color: red;">Não inserir Informações pessoais. Este é só um site para estudo.</p>
+            <br>
+            <label for="name_card">Nome do Titular:</label>
+            <input type="text" id="name_card" name="name_card" class="input"></input>
+            <br>
+            <label for="card_number">Número do cartão:</label>
+            <input type="text" id="card_number" name="card_number" class="input"></input>
+            <br>
+            <label for="validity">Validade:</label>
+            <input type="text" id="validity" name="validity" class="input"></input>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" class="input"></input>
+            <br>
+            <label for="payment">Quantidade de pagamentos:</label>
+            <input list="payment" name="payment" class="">
+            <datalist id="payment">
+                <option value="1x sem juros">
+                <option value="2x sem juros">
+                <option value="3x sem juros">
+                <option value="4x sem juros">    
+            </datalist>
+            <br>
+            <input type="submit" class="buy_button2">
+            <br>
+        </form>
     </div>
 
     <footer>
         <p>Autor: Vitor Razia Bubols</p>
-        <a href="https://github.com/VBubols/SENAI/tree/main/ATIVIDADE%20AVALIATIVA" target="_blank">Acesse o projeto no GitHub!</a>
+        <a href="https://github.com/VBubols/SenaiShop" target="_blank">Acesse o projeto no GitHub!</a>
     </footer>
 </body>
 </html>

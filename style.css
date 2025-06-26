@@ -1,9 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,7 +17,70 @@ body {
     flex-direction: row;
 }
 
-.divImage, .description {
+.container_final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 7.5px auto;
+    max-width: 400px;
+    min-width: 330px;
+}
+
+.description {
+    text-align: center;
+    margin: 7.5px auto;
+    max-width: 400px;
+    min-width: 330px;
+}
+
+.purchase_order {
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 7.5px auto;
+    padding: 5px;
+    max-width: 400px;
+    min-width: 330px;
+}
+
+.container_status {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 7.5px auto;
+    padding: 5px;
+    max-width: 400px;
+    min-width: 330px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+
+.details {
+    margin: 5px;
+    padding: 5px;
+}
+
+.details > p {
+    margin: 1px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.details > p > span {
+    font-weight: normal;
+}
+
+.divImage, .description_shirt {
     padding: 50px 40px;
 }
 
@@ -29,7 +89,7 @@ body {
     width: auto;
 }
 
-.description {
+.description_shirt {
     height: 50%;
     width: 205px;
 }
@@ -54,7 +114,7 @@ body {
     font-size: 30px;
 }
 
-.buy_button2 > a {
+.buy_button2 {
     padding: 5px;
     border: 1px solid black;
     border-radius: 6px;
@@ -63,7 +123,7 @@ body {
     font-size: 15px;
 }
 
-a:hover{
+a:hover, .buy_button2:hover{
     background-color: #008BD2;
     color: #FEFEFE;
 }
